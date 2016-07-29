@@ -393,3 +393,176 @@ console.log(str.substring(0,5));
 console.log(str.slice(-2,7));
 console.log(str.substr(0, 2));*/
 //console.log(str.indexOf("h",5);
+
+
+
+//lessons4
+/*
+var arr= [1,2,3, 4, 5, 6, 7, 8];
+arr.forEach(function(item, i) {
+  arr.forEach(function(item, j) {
+    if (arr[i]<arr[j]) {
+      c = arr[i];
+      arr[i] = arr[j];
+      arr[j] = c;
+    }
+  })
+})
+console.log(arr);
+console.log(arr.filter(function(item){
+  if(item%2 == 1){
+    return true;
+  }
+}))
+
+console.log(arr.filter(function(item){
+  return !(item % 3) || !(item % 6);
+})) 
+
+console.log(arr.map(function(item) {
+  return (item % 2 == 0) ? item * 2 : 0;
+}))
+
+var arr2=[2,4,6];
+console.log(arr2.every(function(number){
+  if(!(number % 2)) return true;
+}))
+console.log(arr.every(function(number){
+  return true;
+}))
+
+console.log(arr2.some(function(number){
+  return (number > 10);
+}))
+
+
+console.log(arr.reduce(function(previous, item, i ,arr){
+  return previous + item;
+}, 0))
+
+var phrase = "азбука, аь, а, ь, еж, ерш, ель, Арматура, болЬ";
+console.log(phrase.split(", ").reduce(function(result, str) {
+  if (str[0].toLowerCase() == "а" ||
+   str[str.length-1].toLowerCase() == "ь") {
+    result.push(str);
+  }
+  return result;
+}, []))
+
+
+//Math
+console.log(Math.sqrt(9), Math.pow(10, 100), (0.1*10 + 0.2*10) / 10, (0.1 + 0.2).toFixed(1));
+console.log(Math.max(10,20,1000,9));
+console.log(Math.random());
+console.log(Math.round(Math.random()*100));
+
+function getRandomColor() {
+  var colors = ["red", "green", "blue"];
+  var index = Math.round(Math.random() * (colors.length -1));
+  return colors[index];
+}
+console.log(getRandomColor());
+
+
+
+*/
+//Date
+
+
+/*
+var now = new Date();
+console.log("" + now, +now);
+console.log(now.getFullYear(), now.getMonth(), now.getDay(), now.getDate());
+
+function showTime() {
+  var now = new Date();
+  console.log(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+}
+*/
+/*setInterval(function() {
+  showTime(); 
+}, 30);
+*/
+
+
+//objects!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//var now = new Date();
+
+//console.log(window.now);
+/*
+var test = {
+  print: function() {
+    //return test.name; а если меняем на
+    return this.name;
+  },
+  name: "test"
+}
+test2 = test;
+test = null;
+console.log(test2.print());
+*/
+var name = "Petya";
+function print() {
+  return this.name;
+}
+/*var test = {
+  name: "Vasya",
+  toString: function() {
+    return this.name
+  },
+  valueOf: function() {
+    return 10;
+  }
+}
+*///test.print = print;
+//console.log(print(), test.print());
+//alert(test);
+//console.log("" + test, test.toString(), +test);
+//var print2 = new print();
+//console.log(print2)
+/*
+function Car(name, price) {
+  this.name = name;
+  this.move = function() {
+    return true;
+  }
+  function setPrice(price) {
+    this.price = price;
+  }
+  setPrice(price)
+  //return null;
+  //return {name: "test"};
+}
+
+var bmw = new Car("BMW");
+var merz = new Car("Mercedes");
+console.log(bmw, merz);
+  
+
+var name = "Ivanov";
+function showName(first, second) {
+  console.log([].slice.call(arguments, ",").pop());
+  return this.name;
+}
+console.log(showName.call(bmw, "10", "20"));
+console.log(showName.apply(bmw, ["10", "20"]))
+console.log(showName.bind(bmw, 10, 20)());
+*/
+
+
+var car = {
+  print: function() {
+//    alert(this.name)
+  },
+  name: "car"
+}
+
+setTimeout(car.print.bind(car), 1000)
+
+try {
+  console.log("test");
+  vartest();
+} catch(err) {
+  console.log(err);
+}
