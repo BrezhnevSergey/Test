@@ -502,10 +502,10 @@ test2 = test;
 test = null;
 console.log(test2.print());
 */
-var name = "Petya";
+/*var name = "Petya";
 function print() {
   return this.name;
-}
+}*/
 /*var test = {
   name: "Vasya",
   toString: function() {
@@ -550,7 +550,7 @@ console.log(showName.apply(bmw, ["10", "20"]))
 console.log(showName.bind(bmw, 10, 20)());
 */
 
-
+/*
 var car = {
   print: function() {
 //    alert(this.name)
@@ -565,4 +565,4 @@ try {
   vartest();
 } catch(err) {
   console.log(err);
-}
+}*/
