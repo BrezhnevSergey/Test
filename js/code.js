@@ -1,3 +1,37 @@
+/*function random(min, max) {
+ return Math.round(min - 0.5 + Math.random() * (max - min + 1));
+}*/
+//or
+function random(min, max) {
+  return Math.floor(min + Math.random() * (max + 1 - min));
+}
+console.log(random(1,3));
+
+
+
+/*function sumTo(a, b) {
+  return a+b;
+}
+function askNum() {
+  var a, b;
+  while(isNaN(a) || a == null || +a == 0) {
+    a = +prompt("Eter first argument: ", "");
+  }
+  while(isNaN(b) || b == null || +b == 0) {
+    b = +prompt("Eter second argument: ", "");
+  }
+  return {
+    a:a,b:b
+  }
+}
+var input = askNum();
+var result = sumTo(input.a, input.b);
+console.log(result);
+*/
+/*result = 0.1+0.2;
+alert( result.toFixed(2) + '$' );
+*/
+
 //document.write("Hello world");
 /*alert("Hello world");
 alert("Hello hell");
@@ -502,10 +536,10 @@ test2 = test;
 test = null;
 console.log(test2.print());
 */
-var name = "Petya";
+/*var name = "Petya";
 function print() {
   return this.name;
-}
+}*/
 /*var test = {
   name: "Vasya",
   toString: function() {
@@ -551,7 +585,7 @@ console.log(showName.bind(bmw, 10, 20)());
 */
 
 
-var car = {
+/*var car = {
   print: function() {
 //    alert(this.name)
   },
@@ -565,4 +599,4 @@ try {
   vartest();
 } catch(err) {
   console.log(err);
-}
+}*/
