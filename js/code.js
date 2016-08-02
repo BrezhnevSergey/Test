@@ -2,12 +2,12 @@
  return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 }*/
 //or
-function random(min, max) {
+/*function random(min, max) {
   return Math.floor(min + Math.random() * (max + 1 - min));
 }
 console.log(random(1,3));
 
-
+*/
 
 /*function sumTo(a, b) {
   return a+b;
