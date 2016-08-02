@@ -2,11 +2,11 @@
  return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 }*/
 //or
-function random(min, max) {
+/*function random(min, max) {
   return Math.floor(min + Math.random() * (max + 1 - min));
 }
 console.log(random(1,3));
-
+*/
 
 
 /*function sumTo(a, b) {
@@ -600,3 +600,103 @@ try {
 } catch(err) {
   console.log(err);
 }*/
+
+
+
+
+
+
+///////lesson5
+/*
+var obj = {};
+/*
+Object.defineProperty(obj, "test", {
+  value: "123",
+  writable: true,
+  configurable: true,
+  enurable: true
+})*/
+/*
+Object.defineProperty(obj, "test" ,{
+  get: function() {
+    return this.name + "qwety!"
+  },
+  set: function(value) {
+    this. name = value + "@gmail.com";
+  }
+})
+obj.test = "Petrov";
+
+console.log(obj.test);*/
+
+//OOP
+
+/*var car = {
+  wheels: 4
+}
+
+var bmw = {
+  color: "black",
+  __proto__:car
+}
+*/
+/*for (var key in bmw) {
+  console.log(key, bmw[key])
+}*/
+/*
+bmw.wheels = 3;
+delete bmw.wheels
+console.log(bmw, car)
+*/
+
+/*var car = {
+  wheels: 4
+}
+
+var bmw = {
+  color: "black",
+}
+
+console.log(bmw.hasOwnProperty())*/
+/*
+
+var obj = Object.create(null) //без прототипов
+alert(obj)*/
+
+/*
+var car = {
+
+  move: function() {
+    console.log("move");
+  },
+
+  stop: function() {
+    console.log("stop");
+  }
+}
+
+function BMW(name, color) {
+  this.name = name;
+  this.name = color;
+}
+
+BMW.prototype = car;*/
+
+/*var bmw = new BMW("BNW", "black")
+bmw.move()
+*/
+
+/*
+function inherit(proto) {
+  var func = function(){}
+  func.prototype = proto;
+  var object = new func;
+  return object;
+}
+
+Object.create = inherit;
+
+var test = Object.create(car)
+console.log(test);*/
+
+//console.log([1,2,3].join(","))
