@@ -6,8 +6,13 @@
   return Math.floor(min + Math.random() * (max + 1 - min));
 }
 console.log(random(1,3));
+<<<<<<< HEAD
 */
 
+=======
+
+*/
+>>>>>>> bd899146350190973fcf0530e6ff499aec262acc
 
 /*function sumTo(a, b) {
   return a+b;
@@ -584,8 +589,13 @@ console.log(showName.apply(bmw, ["10", "20"]))
 console.log(showName.bind(bmw, 10, 20)());
 */
 
+<<<<<<< HEAD
+/*
+var car = {
+=======
 
 /*var car = {
+>>>>>>> e44f752d32802b1715540949d4845ba4caba2fa7
   print: function() {
 //    alert(this.name)
   },
