@@ -9,10 +9,6 @@ console.log(random(1,3));
 <<<<<<< HEAD
 */
 
-=======
-
-*/
->>>>>>> bd899146350190973fcf0530e6ff499aec262acc
 
 /*function sumTo(a, b) {
   return a+b;
@@ -589,7 +585,6 @@ console.log(showName.apply(bmw, ["10", "20"]))
 console.log(showName.bind(bmw, 10, 20)());
 */
 
-<<<<<<< HEAD
 /*
 var car = {
 =======
@@ -710,3 +705,4 @@ var test = Object.create(car)
 console.log(test);*/
 
 //console.log([1,2,3].join(","))
+//console.log(parseInt(true));
